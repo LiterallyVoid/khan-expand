@@ -56,6 +56,7 @@ setTimeout(function() {
 	    popup.style.padding = 0;
 	    popup.style.width = '100%';
 	    popup.style.height = '100%';
+	    popup.style.backgroundColor = 'white';
 	    var iframe = document.createElement('iframe');
 	    iframe.src = 'data:text/html,' + encodeURIComponent(htmlDoc);
 	    iframe.style.position = 'fixed';
