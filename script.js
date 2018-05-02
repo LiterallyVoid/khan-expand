@@ -4,6 +4,13 @@ var url = thisScript.getAttribute('asset-url');
 var output;
 setTimeout(function() {
     var editor = ace.edit(document.getElementsByClassName('scratchpad-editor')[0]);
+
+    var mode = editor.session.$modeId;
+    
+    mode = mode.substr(mode.lastIndexOf('/') + 1);
+    if(mode != 'html') {
+	return;
+    }
     output = document.getElementById('output-frame');
     var button = document.createElement('img');
     button.style.position = 'fixed';
