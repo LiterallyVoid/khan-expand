@@ -56,7 +56,6 @@ setTimeout(function() {
 	    popup.style.padding = 0;
 	    popup.style.width = '100%';
 	    popup.style.height = '100%';
-	    popup.style.backgroundColor = 'white';
 	    var iframe = document.createElement('iframe');
 	    iframe.src = 'data:text/html,' + encodeURIComponent(htmlDoc);
 	    iframe.style.position = 'fixed';
@@ -64,6 +63,7 @@ setTimeout(function() {
 	    iframe.style.width = '100%';
 	    iframe.style.height = '100%';
 	    iframe.style.zIndex = 999999;
+	    iframe.style.backgroundColor = 'white';
 	    popup.appendChild(iframe);
 	    origParent.removeChild(button);
 	    document.body.appendChild(button);
